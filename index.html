@@ -1,0 +1,622 @@
+<HTML>
+<link rel="manifest" href="./manifest.json">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252"></head>
+
+    <title>SFM_Mini</title>
+    <meta charset="utf-8">
+    <style>
+        #container1 {
+            width: 230px;
+            height: 440px;
+			margin-top: 5px;
+			margin-left: 5px;
+        }
+
+        #subcon1 {
+            width: 214px;
+            height: 86px;
+            background-color:#c8d7c8;
+            text-align: center;
+            margin: auto;
+            margin-top: 18px;
+            border-top: 1px solid rgb(126, 126, 126);
+            border-right: 1px solid rgb(84, 84, 84);
+            border-bottom: 1px solid rgb(84, 84, 84);
+            border-left: 1px solid rgb(126, 126, 126);
+        }
+
+        #subcon2 {
+            width: 214px;
+            height: 203px;
+            margin: auto;
+            margin-top: 9px;
+            border-top: 1px solid rgb(126, 126, 126);
+            border-right: 1px solid rgb(84, 84, 84);
+            border-bottom: 1px solid rgb(84, 84, 84);
+            border-left: 1px solid rgb(126, 126, 126);
+        }
+
+        #subcon3 {
+            width: 214px;
+            height: 75px;
+            margin: auto;
+            margin-top: 9px;
+            border-top: 1px solid rgb(126, 126, 126);
+            border-right: 1px solid rgb(84, 84, 84);
+            border-bottom: 1px solid rgb(84, 84, 84);
+            border-left: 1px solid rgb(126, 126, 126);
+        }
+
+        #innercon1 {
+            width: 214px;
+            height: 28px;
+            padding-top: 2px;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+
+        #innercon1b {
+            width: 214px;
+            height: 28px;
+            padding-top: 3px;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+
+        #sfmcon {
+            width: 214px;
+            height: 29px;
+			      background-color:#80d585;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+        #rpmcon {
+            width: 214px;
+            height: 29px;
+			      background-color:#80d585;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+        #iprcon {
+            width: 214px;
+            height: 29px;
+			      background-color:#80d585;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+        #ipmcon {
+            width: 214px;
+            height: 29px;
+			      background-color:#80d585;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+        #iptcon {
+            width: 214px;
+            height: 29px;
+			      background-color:#80d585;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+        #diacon {
+            width: 214px;
+            height: 29px;
+			      background-color:#80d585;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+        #numTeethcon {
+            width: 214px;
+            height: 29px;
+			      background-color:#80d585;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+
+        #innercon3 {
+            width: 214px;
+            height: 25px;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+
+        #innerinner1 {
+            width: 214px;
+            height: 22px;
+            padding-top: 4px;
+            text-align: center;
+            font-weight: bold;
+            background-color:#A5CEA7;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+
+        #innerinner2 {
+            width: 214px;
+            height: 22px;
+            padding-top: 4px;
+            text-align: center;
+            font-weight: bold;
+            background-color:#A5CEC7;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+
+        #innerinner3 {
+            width: 214px;
+            height: 22px;
+            padding-top: 1px;
+            text-align: center;
+            background-color:#A5CEE7;
+            border-bottom: 1px solid rgb(84, 84, 84);
+        }
+
+        #innerinnerleft {
+            width: 58px;
+            height: 29px;
+            padding-top: 5px;
+            padding-right: 5px;
+            text-align: right;
+            float: left;
+            font-weight: bold;
+            border-right: 1px solid rgb(84, 84, 84);
+        }
+
+        #innerinnerright {
+            width: 145px;
+            height: 27px;
+            padding-top: 2px;
+            padding-left: 5px;
+            float: right;
+            background-color: transparent;
+        }
+		
+		#innerarrowL {
+			width: 11px;
+			height: 22px;
+			/* background-color:#eee; */
+			float: left;
+		}
+
+		#innerarrowR {
+			width: 11px;
+			height: 22px;
+			/* background-color:#eee; */
+			float: right;
+		}
+		
+		#innermiddle {
+			width: 190px;
+			height: 22px;
+			float: left;
+			padding: 3px;
+			/* background-color:#ccc; */
+		}
+		
+		input#goUL    {
+		background:url(ul-g.png);
+		background-repeat: no-repeat;
+		margin-top: 0px;
+		float: left;
+		width:10px;
+		height:10px;
+		border: 0;
+		cursor: pointer;
+		}
+
+		input#goUR    {
+		background:url(ur-g.png);
+		background-repeat: no-repeat;
+		margin-top: 0px;
+		float: right;
+		width:10px;
+		height:10px;
+		border: 0;
+		cursor: pointer;
+		}
+		
+		input#goLR    {
+		background:url(lr-g.png);
+		background-repeat: no-repeat;
+		margin-top: 15px;
+		float: left;
+		width:10px;
+		height:10px;
+		border: 0;
+		cursor: pointer;
+		}
+
+		input#goLL    {
+		background:url(ll-g.png);
+		background-repeat: no-repeat;
+		margin-top: 15px;
+		float: right;
+		width:10px;
+		height:10px;
+		border: 0;
+		cursor: pointer;
+		}		
+
+	</style>
+<script language="javascript">
+var ready = 1
+var notReady = 0
+var inches = 1
+var millimeters = 0
+var units = -1
+var prep = -1
+var unitVal = 0
+var status = ''
+var status2 = ''
+var pi = 3.14159265
+var sfm = 0; var rpm; var ipm = 0; var ipr = 0; var ipt = 0; var dia = 0; var numTeeth = 0
+var nada = -1
+var aBlank = '???'
+var aOk = "#80d585"
+var notSoSure = "#fbeb88"
+var notSoGood = "#e36060"
+var subconcolor = "#c8d7c8"
+
+function checkUnits(form){
+status = ''
+if (form.tpi.value){
+  units = inches
+  unitVal = form.tpi.value
+  status = chkNum(unitVal,1)
+  }
+  else if (form.Xmm.value){
+    units = millimeters
+    unitVal = 1/(form.Xmm.value/25.4)
+    status = chkNum(unitVal,1)
+    }
+return status
+}
+
+function chkNum(suspect,wish){
+var tst1 = parseInt(suspect)
+if (isNaN(tst1)){
+//alert('Not a number ' + tst1 + ' ' + suspect)
+  return ''
+  }
+else{
+  return wish
+  }
+}
+
+function chkFeedOrSpeed(form){
+status2 = ''
+if (form.fRate.value){
+  status2 =  chkNum(form.fRate.value,1)
+  return status2
+  }
+  else if (form.sSpeed.value){
+    status2 =  chkNum(form.sSpeed.value,2)
+    return status2
+    }
+    else{
+      alert('Need numeric Feed or Speed to calculate the other')
+      return ''
+      }
+}
+
+function calculateSpeed(form){
+spindleSpeed = parseInt(form.fRate.value * unitVal)
+//spindleSpeed = form.fRate.value * unitVal
+form.sSpeed.value=spindleSpeed
+}
+
+function calculateFeed(form){
+feedRate = form.sSpeed.value / unitVal
+form.fRate.value=feedRate.toFixed(1)
+}
+
+function consider(form){
+status = checkUnits(form)
+if (status){
+  // alert('so far, so good!')
+  }
+  else{
+    alert('Cannot calculate without numeric thread information !!')
+    }
+status2 = chkFeedOrSpeed(form)
+if (status2 == 1){
+  calculateSpeed(form)
+  }
+  else if (status2 == 2){
+    calculateFeed(form)
+    }
+     else{
+      alert('Nothing to work with ... ')
+      }
+}
+
+function FlushMarkers(Tic,Tac,Toe){
+sfm=0;rpm=0;ipr=0;ipm=0;ipt=0;dia=0;numTeeth=0
+if (sfmForm.ClearOpt[1].checked == true){
+Bogie=Tic + '=-1'
+eval(Bogie)
+Bogie=Tac + '=-1'
+eval(Bogie)
+Bogie=Toe + '=-1'
+eval(Bogie)
+}
+}
+
+function CheckNeeds( aVal, bVal, cVal){
+aRow = aVal + 'con'
+bRow = bVal + 'con'
+cRow = cVal + 'con'
+FlushMarkers(aVal, bVal, cVal)
+aControl = 'sfmForm.' + aVal + '.value'
+aVal = eval(aControl)
+if (aVal == 0){
+  eval(aControl + '= aBlank')
+  setColor(eval(aRow), notSoSure)
+  }
+bControl = 'sfmForm.' + bVal + '.value'
+bVal = eval(bControl)
+if (bVal == 0){
+  eval(bControl + '= aBlank')
+  setColor(eval(bRow), notSoSure)
+  }
+if ( cVal != 'nada' ){
+  cControl = 'sfmForm.' + cVal + '.value'
+  cVal = eval(cControl)
+  if (cVal == 0){
+    eval(cControl + '= aBlank')
+    setColor(eval(cRow), notSoSure)
+    }
+  }
+return aVal*bVal*cVal
+}
+
+function setColor(element, color){
+    element.style.backgroundColor = color;
+}
+
+function CheckCells(whichCipher){
+setColor(subcon1, "#c8d7c8")
+switch (whichCipher)
+  {
+    case "1": 
+//	sfmForm.sfm.value='';
+	myCheck=CheckNeeds('dia','rpm','nada')
+	document.title = "Whirrrr !"
+//	alert(myCheck)
+	break;
+    case "2":
+//	sfmForm.rpm.value='';
+	myCheck=CheckNeeds('dia','sfm','nada')
+	document.title = "Vroooom !"
+//	alert(myCheck)
+	break;
+    case "3":
+//	sfmForm.ipr.value='';
+	myCheck=CheckNeeds('ipm','rpm','nada')
+	document.title = "Snail's Pace"
+//	alert(myCheck)
+	break;
+    case "4":
+//	sfmForm.ipm.value='';
+	myCheck=CheckNeeds('ipt','numTeeth','rpm')
+	document.title = "Whoahh!"
+//	alert(myCheck)
+	break;
+    case "5":
+//	sfmForm.ipt.value='';
+	myCheck=CheckNeeds('ipm','numTeeth','rpm')
+	document.title = "Eye P Tea"
+//	alert(myCheck)
+	break;
+    case "6":
+//	sfmForm.ipt.value='';
+	myCheck=CheckNeeds('ipr','numTeeth','nada')
+	document.title = "Eye P Tea"
+//	alert(myCheck)
+	break;
+    case "7":
+//	sfmForm.ipm.value='';
+	myCheck=CheckNeeds('ipr','rpm','nada')
+	document.title = "Whoosh!"
+//	alert(myCheck)
+	break;
+    default:
+	myCheck = "No ... pick something."
+//	alert('Yes, that was fun .. now make a *REAL* selection ...');
+  }
+return myCheck
+}
+
+function doCipher(whichCipher){
+CheckCells(whichCipher)
+//	alert(whichCipher + ' & ' + myCheck)
+switch (whichCipher)
+  {
+    case "1": 
+	myOutput=(pi * sfmForm.dia.value * sfmForm.rpm.value)/12
+	sfmForm.sfm.value=myOutput.toFixed(4)
+	myOutput=sfmForm.sfm.value
+	daRow = sfmcon
+	setColor(sfmcon, aOk)
+	break;
+    case "2": 
+	myOutput=(12 * sfmForm.sfm.value)/(pi * sfmForm.dia.value)
+	sfmForm.rpm.value=myOutput.toFixed(4)
+	myOutput=sfmForm.rpm.value
+	daRow = rpmcon
+	setColor(rpmcon, aOk)
+	break;
+    case "3": 
+	myOutput=sfmForm.ipm.value/sfmForm.rpm.value
+	sfmForm.ipr.value=myOutput.toFixed(4)
+	myOutput=sfmForm.ipr.value
+	daRow = iprcon
+	setColor(iprcon, aOk)
+	break;
+    case "4": 
+	myOutput=sfmForm.ipt.value * sfmForm.numTeeth.value * sfmForm.rpm.value
+	sfmForm.ipm.value=myOutput.toFixed(4)
+	myOutput=sfmForm.ipm.value
+	daRow = ipmcon
+	setColor(ipmcon, aOk)
+	break;
+    case "5": 
+	myOutput=sfmForm.ipm.value / (sfmForm.numTeeth.value * sfmForm.rpm.value)
+	sfmForm.ipt.value=myOutput.toFixed(4)
+	myOutput=sfmForm.ipt.value
+	daRow = iptcon
+	setColor(iptcon, aOk)
+	break;
+    case "6": 
+	myOutput=sfmForm.ipr.value / sfmForm.numTeeth.value
+	sfmForm.ipt.value=myOutput.toFixed(4)
+	myOutput=sfmForm.ipt.value
+	daRow = iptcon
+	setColor(iptcon, aOk)
+	break;
+    case "7": 
+	myOutput=sfmForm.rpm.value * sfmForm.ipr.value
+	sfmForm.ipm.value=myOutput.toFixed(4)
+	myOutput=sfmForm.ipm.value
+	daRow = ipmcon
+	setColor(ipmcon, aOk)
+	break;
+    default:
+	daRow = subcon1
+	myOutput = "NaN"
+  }
+if (myOutput == "NaN"){
+  setColor(eval(daRow), notSoGood)
+  alert('Missing or Invalid Input Fields ... Replace ??? With REAL Data')
+  }
+}
+
+function ClearAllCells(){
+CheckCells(sfmForm.CalcSelector.value)
+if (sfm==0){
+  sfmForm.sfm.value=''
+  	setColor(sfmcon, aOk)
+}
+if (rpm==0){
+  sfmForm.rpm.value=''
+  	setColor(rpmcon, aOk)
+}
+if (ipr==0){
+  sfmForm.ipr.value=''
+  	setColor(iprcon, aOk)
+}
+if (ipm==0){
+  sfmForm.ipm.value=''
+  	setColor(ipmcon, aOk)
+}
+if (ipt==0){
+  sfmForm.ipt.value=''
+  	setColor(iptcon, aOk)
+}
+if (dia==0){
+  sfmForm.dia.value=''
+  	setColor(diacon, aOk)
+}
+if (numTeeth==0){
+  sfmForm.numTeeth.value=''
+  	setColor(numTeethcon, aOk)
+}
+}
+</script>
+
+</head>
+<body bgcolor="#e6e6e6"><font face="Arial, Helvetica, sans-serif">
+    <form action="" method="post" name="sfmForm" id="sfmForm">
+    <div id="container1">
+      <div id="subcon1">
+        <div id="innercon1">
+			<div id="innermiddle">
+				SFM, RPM, etc. Helper
+			</div>
+        </div>
+        <div id="innercon1">
+          <div align="center"><font size="2">
+                  <select name="CalcSelector" size="1" id="CalcSelector" onChange="
+CheckCells(this.form.CalcSelector.value)">
+                    <option value="0">Select from list below</option>
+                    <option value="2">RPM from DIA &amp; SFM</option>
+                    <option value="4">IPM from RPM &amp; IPT &amp; NT</option>
+                    <option value="7">IPM from RPM &amp; IPR</option>
+                    <option value="3">IPR from RPM &amp; IPM</option>
+                    <option value="1">SFM from DIA &amp; RPM</option>
+                    <option value="6">IPT from IPR &amp; NT</option>
+                    <option value="5">IPT from RPM &amp; IPM &amp; NT</option>
+            </select></font>
+                  </div>
+        </div>
+        <div id="innercon1b">
+          <input name="GoFigure" type="button" id="GoFigure" value="Go Figure" onClick="doCipher(this.form.CalcSelector.value)">
+        </div>
+      </div>
+      <div id="subcon2">
+        <div id="sfmcon">
+          <div id="innerinnerleft">
+            SFM
+          </div>
+          <div id="innerinnerright">
+            <input name="sfm" type="text" id="sfm" size="10" maxlength="10">
+          </div>
+        </div>
+        <div id="rpmcon">
+          <div id="innerinnerleft">
+            RPM
+          </div>
+          <div id="innerinnerright">
+            <input name="rpm" type="text" id="rpm" size="10" maxlength="10">
+          </div>
+        </div>
+        <div id="iprcon">
+          <div id="innerinnerleft">
+            IPR
+          </div>
+          <div id="innerinnerright">
+            <input name="ipr" type="text" id="ipr" size="10" maxlength="10">
+          </div>
+        </div>
+        <div id="ipmcon">
+          <div id="innerinnerleft">
+            IPM
+          </div>
+          <div id="innerinnerright">
+            <input name="ipm" type="text" id="ipm" size="10" maxlength="10">
+          </div>
+        </div>
+        <div id="iptcon">
+          <div id="innerinnerleft">
+            IPT
+          </div>
+          <div id="innerinnerright">
+            <input name="ipt" type="text" id="ipt" size="10" maxlength="10">
+          </div>
+        </div>
+        <div id="diacon">
+          <div id="innerinnerleft">
+            DIA
+          </div>
+          <div id="innerinnerright">
+            <input name="dia" type="text" id="dia" size="10" maxlength="10">
+          </div>
+        </div>
+        <div id="numTeethcon">
+          <div id="innerinnerleft">
+            NT
+          </div>
+          <div id="innerinnerright">
+            <input name="numTeeth" type="text" id="numTeeth" size="10" maxlength="10">
+          </div>
+        </div>
+      </div>
+      <div id="subcon3">
+        <div id="innerinner1"><label>
+          <input name="ClearOpt" type="radio" value="radiobutton" checked>
+	<font size="2" face="Arial, Helvetica, sans-serif">ALL Fields</font></label>
+        </div>
+        <div id="innerinner2"><label>
+          <input type="radio" name="ClearOpt" value="radiobutton">
+	<font size="2" face="Arial, Helvetica, sans-serif">Unrelated Fields</font></label>
+        </div>
+        <div id="innerinner3">
+			<div id="innermiddle">
+          <input name="ClearAll" type="button" id="ClearAll" value="Clear Fields" onClick="ClearAllCells()">
+			</div>
+        </div>
+      </div>
+    </div>
+  </form>
+</font>
+</body>
+
